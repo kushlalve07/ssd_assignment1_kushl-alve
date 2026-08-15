@@ -14,3 +14,9 @@ implemented as a standalone C++ program demonstrating a specific feature:
 - **Profile** — view and update a student's profile details.
 - **Dashboard** — displays a summary view (attendance, GPA, enrolled courses).
 - **Settings** — toggle user preferences (notifications, theme, language).
+
+## Prerequisites
+ 
+- A C++ compiler supporting C++11 or later (e.g. `g++`, `clang++`)
+- Git installed and configured
+- A terminal / shell (bash, zsh, or Git Bash on Windows)
