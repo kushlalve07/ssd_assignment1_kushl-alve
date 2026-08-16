@@ -41,5 +41,17 @@ int main() {
     attempts++;
     loggedIn = attemptLogin(testUsername, wrongPassword, attempts);
 
+    if (!loggedIn && attempts < MAX_ATTEMPTS) {
+        attempts++;
+        loggedIn = attemptLogin(testUsername, correctPassword, attempts);
+    }
+
+    if (!loggedIn) {
+        std::cout << "Account locked after " << MAX_ATTEMPTS << " failed attempts." << std::endl;
+        return 1;
+    }
+
+    std::cout << "Session started for user: " << testUsername << std::endl;
+    
     return 0;
 }
