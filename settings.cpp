@@ -45,3 +45,24 @@ bool setLanguage(UserSettings& settings, const std::string& langCode) {
     std::cout << "Language updated to: " << it->second << " (" << langCode << ")" << std::endl;
     return true;
 }
+
+int main() {
+    std::cout << "===== Student Portal: Settings =====" << std::endl;
+
+    UserSettings settings;
+    settings.notificationsEnabled = true;
+    settings.theme = "light";
+    settings.language = "en";
+
+    printSettings(settings);
+
+    toggleNotifications(settings);
+    setTheme(settings, "dark");
+    setLanguage(settings, "es");
+    setLanguage(settings, "de");
+
+    std::cout << std::endl << "Final settings:" << std::endl;
+    printSettings(settings);
+
+    return 0;
+}
