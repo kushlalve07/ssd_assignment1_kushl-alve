@@ -48,3 +48,14 @@ for f in src/main.cpp login.cpp profile.cpp dashboard.cpp settings.cpp; do
 done
 ```
 
+## Run Instructions
+ 
+After building, run any module directly:
+ 
+```bash
+./main
+./login
+./profile
+./dashboard
+./settings
+```
