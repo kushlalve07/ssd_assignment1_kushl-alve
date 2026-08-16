@@ -30,5 +30,16 @@ bool attemptLogin(const std::string& username, const std::string& password, int 
 
 int main() {
     std::cout << "===== Student Portal: Login =====" << std::endl;
+
+    std::string testUsername = "alice";
+    std::string wrongPassword = "wrongpass";
+    std::string correctPassword = "pass123";
+
+    bool loggedIn = false;
+    int attempts = 0;
+
+    attempts++;
+    loggedIn = attemptLogin(testUsername, wrongPassword, attempts);
+
     return 0;
 }
