@@ -28,3 +28,17 @@ void promoteYear(StudentProfile& profile) {
     profile.yearOfStudy++;
     std::cout << profile.name << " has been promoted to year " << profile.yearOfStudy << std::endl;
 }
+
+int main() {
+    std::cout << "===== Student Portal: Profile =====" << std::endl;
+
+    StudentProfile student;
+    student.name = "Alice Johnson";
+    student.rollNumber = "CS21B045";
+    student.email = "alice.johnson@example.edu";
+    student.major = "Computer Science";
+    student.yearOfStudy = 2;
+
+    printProfile(student);
+    return 0;
+}
