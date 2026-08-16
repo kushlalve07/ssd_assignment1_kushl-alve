@@ -54,5 +54,13 @@ int main() {
     };
 
     printCourseTable(enrolledCourses);
+
+    std::cout << std::endl;
+    std::cout << "Average Grade      : " << calculateAverageGrade(enrolledCourses) << std::endl;
+    std::cout << "Average Attendance : " << calculateAverageAttendance(enrolledCourses) << "%" << std::endl;
+
+    std::cout << std::endl;
+    printAttendanceWarnings(enrolledCourses);
+    
     return 0;
 }
