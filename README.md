@@ -59,3 +59,23 @@ After building, run any module directly:
 ./dashboard
 ./settings
 ```
+
+## Project Structure
+ 
+```
+student-portal/
+├── README.md
+├── .gitignore
+├── src/
+│   └── main.cpp        # Entry point / core utilities
+├── login.cpp            # Authentication module
+├── profile.cpp           # Profile management module
+├── dashboard.cpp         # Dashboard summary module
+└── settings.cpp          # Settings/preferences module
+```
+ 
+## Notes
+ 
+This repository was built as part of a Git version control lab exercise,
+covering branching, merging, stashing, conflict resolution, history rewriting,
+and recovery techniques (reflog, cherry-pick, revert).
