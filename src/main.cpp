@@ -66,5 +66,7 @@ int main() {
 
     // Part 6: Temporary dummy comment to demonstrate stash.
 
+    //Part 7: Temporary dummy comment for Part 7.
+
     return 0;
 }
