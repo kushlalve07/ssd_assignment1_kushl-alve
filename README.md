@@ -20,3 +20,10 @@ implemented as a standalone C++ program demonstrating a specific feature:
 - A C++ compiler supporting C++11 or later (e.g. `g++`, `clang++`)
 - Git installed and configured
 - A terminal / shell (bash, zsh, or Git Bash on Windows)
+
+## Cloning the Repository
+ 
+```bash
+git clone https://github.com/kushlalve07/ssd_assignment1_kushl-alve.git
+cd student-portal
+```
