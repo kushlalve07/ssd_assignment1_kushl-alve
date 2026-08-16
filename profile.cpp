@@ -23,3 +23,8 @@ void updateEmail(StudentProfile& profile, const std::string& newEmail) {
     std::cout << "Updating email from " << profile.email << " to " << newEmail << std::endl;
     profile.email = newEmail;
 }
+
+void promoteYear(StudentProfile& profile) {
+    profile.yearOfStudy++;
+    std::cout << profile.name << " has been promoted to year " << profile.yearOfStudy << std::endl;
+}
