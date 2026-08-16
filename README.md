@@ -27,3 +27,24 @@ implemented as a standalone C++ program demonstrating a specific feature:
 git clone https://github.com/kushlalve07/ssd_assignment1_kushl-alve.git
 cd student-portal
 ```
+
+## Build Instructions
+ 
+Each module compiles independently. From the project root:
+ 
+```bash
+g++ src/main.cpp -o main
+g++ login.cpp -o login
+g++ profile.cpp -o profile
+g++ dashboard.cpp -o dashboard
+g++ settings.cpp -o settings
+```
+ 
+Or compile all at once:
+ 
+```bash
+for f in src/main.cpp login.cpp profile.cpp dashboard.cpp settings.cpp; do
+    g++ "$f" -o "${f%.cpp}"
+done
+```
+
