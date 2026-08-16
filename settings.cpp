@@ -15,3 +15,9 @@ void printSettings(const UserSettings& settings) {
     std::cout << "Language      : " << settings.language << std::endl;
     std::cout << "-----------------------------" << std::endl;
 }
+
+void toggleNotifications(UserSettings& settings) {
+    settings.notificationsEnabled = !settings.notificationsEnabled;
+    std::cout << "Notifications toggled to: "
+              << (settings.notificationsEnabled ? "ON" : "OFF") << std::endl;
+}
