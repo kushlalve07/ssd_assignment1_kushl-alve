@@ -40,5 +40,12 @@ int main() {
     student.yearOfStudy = 2;
 
     printProfile(student);
+
+    updateEmail(student, "alice.j.new@example.edu");
+    promoteYear(student);
+
+    std::cout << std::endl << "Updated profile:" << std::endl;
+    printProfile(student);
+
     return 0;
 }
