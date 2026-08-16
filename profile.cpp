@@ -18,3 +18,8 @@ void printProfile(const StudentProfile& profile) {
     std::cout << "Year        : " << profile.yearOfStudy << std::endl;
     std::cout << "----------------------------" << std::endl;
 }
+
+void updateEmail(StudentProfile& profile, const std::string& newEmail) {
+    std::cout << "Updating email from " << profile.email << " to " << newEmail << std::endl;
+    profile.email = newEmail;
+}
