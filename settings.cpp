@@ -21,3 +21,13 @@ void toggleNotifications(UserSettings& settings) {
     std::cout << "Notifications toggled to: "
               << (settings.notificationsEnabled ? "ON" : "OFF") << std::endl;
 }
+
+bool setTheme(UserSettings& settings, const std::string& newTheme) {
+    if (newTheme != "light" && newTheme != "dark") {
+        std::cout << "Invalid theme requested: " << newTheme << ". Keeping current theme." << std::endl;
+        return false;
+    }
+    settings.theme = newTheme;
+    std::cout << "Theme updated to: " << newTheme << std::endl;
+    return true;
+}
