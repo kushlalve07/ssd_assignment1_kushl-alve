@@ -33,3 +33,12 @@ double calculateAverageAttendance(const std::vector<Course>& courses) {
     for (const auto& c : courses) sum += c.attendancePercent;
     return sum / courses.size();
 }
+
+void printAttendanceWarnings(const std::vector<Course>& courses) {
+    for (const auto& c : courses) {
+        if (c.attendancePercent < 75.0) {
+            std::cout << "WARNING: Attendance below 75% in " << c.name
+                       << " (" << c.attendancePercent << "%)" << std::endl;
+        }
+    }
+}
