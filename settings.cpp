@@ -31,3 +31,17 @@ bool setTheme(UserSettings& settings, const std::string& newTheme) {
     std::cout << "Theme updated to: " << newTheme << std::endl;
     return true;
 }
+
+bool setLanguage(UserSettings& settings, const std::string& langCode) {
+    static const std::map<std::string, std::string> supportedLanguages = {
+        {"en", "English"}, {"es", "Spanish"}, {"fr", "French"}
+    };
+    auto it = supportedLanguages.find(langCode);
+    if (it == supportedLanguages.end()) {
+        std::cout << "Unsupported language code: " << langCode << std::endl;
+        return false;
+    }
+    settings.language = langCode;
+    std::cout << "Language updated to: " << it->second << " (" << langCode << ")" << std::endl;
+    return true;
+}
