@@ -19,6 +19,15 @@ bool validateCredentials(const std::string& username, const std::string& passwor
     return it->second == password;
 }
 
+bool attemptLogin(const std::string& username, const std::string& password, int attemptNumber) {
+    if (validateCredentials(username, password)) {
+        std::cout << "Login successful. Welcome, " << username << "!" << std::endl;
+        return true;
+    }
+    std::cout << "Login failed (attempt " << attemptNumber << " of " << MAX_ATTEMPTS << ")." << std::endl;
+    return false;
+}
+
 int main() {
     std::cout << "===== Student Portal: Login =====" << std::endl;
     return 0;
