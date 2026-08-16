@@ -42,3 +42,17 @@ void printAttendanceWarnings(const std::vector<Course>& courses) {
         }
     }
 }
+
+int main() {
+    std::cout << "===== Student Portal: Dashboard =====" << std::endl;
+
+    std::vector<Course> enrolledCourses = {
+        {"CS201", "Data Structures",      82.5, 8.7},
+        {"CS305", "Operating Systems",    91.0, 9.1},
+        {"MA204", "Linear Algebra",       68.0, 7.4},
+        {"HU101", "Technical Writing",    95.5, 9.5}
+    };
+
+    printCourseTable(enrolledCourses);
+    return 0;
+}
